@@ -1,0 +1,113 @@
+@mixin cont() {
+  position: relative;
+  top: 50px;
+  margin-left: 50px;
+  background-color: #a3a29f;
+  min-height: auto;
+}
+.brief-information {
+  @include cont();
+}
+@mixin experience() {
+  position: relative;
+  top: 100px;
+  margin-left: 50px;
+  background-color: #a3a29f;
+  min-height: auto;
+}
+.experience-container {
+  @include experience();
+}
+@mixin proj() {
+  position: relative;
+  top: 150px;
+  margin-left: 50px;
+  background-color: #a3a29f;
+  min-height: auto;
+}
+.projects-container {
+  @include proj();
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$shadow-design: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
+body {
+  background-color: rgb(250, 243, 233);
+}
+#main {
+  box-shadow: $shadow-design;
+  min-height: 245vh;
+  display: flex;
+  width: 90%;
+}
+.proje {
+  width: 70%;
+}
+.about-me {
+  width: 20%;
+  position: relative;
+  left: 0px;
+  background: linear-gradient (rgba(121, 77, 12, 0.2), rgba(84, 155, 90, 0.9));
+}
+.projects-container p {
+  font-style: italic;
+}
+.project {
+  min-height: 245vh;
+}
+.linkedln {
+  display: flex;
+}
+.zuri-logo,
+.voice-logo {
+  width: 40px;
+  height: 40px;
+  left: 0;
+}
+.crute {
+  max-width: 100%;
+}
+img {
+  width: 40px;
+  height: 50px;
+  position: relative;
+  left: -9px;
+}
+.code-location,
+.linkedln {
+  display: flex;
+  gap: 20px;
+}
+.code-technologies {
+  display: flex;
+  gap: 15px;
+}
+.code-technologies p {
+  border: 2px solid;
+  height: 40px;
+  border-radius: 30px;
+}
+#aside {
+  min-height: 245vh;
+}
+.mine {
+  text-align: center;
+}
+.email,
+.call,
+.home,
+.birth,
+.status,
+.GitHub,
+.Linkedln,
+.Dev,
+.CodePen,
+.Twitter {
+  display: flex;
+  gap: 15px;
+}
