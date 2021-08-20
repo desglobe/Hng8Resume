@@ -7627,24 +7627,24 @@ button.close {
 
 .brief-information {
   position: relative;
-  top: 50px;
-  margin-left: 50px;
+  top: 30px;
+  left: 0;
   background-color: #a3a29f;
   min-height: auto;
 }
 
 .experience-container {
   position: relative;
-  top: 100px;
-  margin-left: 50px;
+  top: 50px;
+  left: 0;
   background-color: #a3a29f;
   min-height: auto;
 }
 
 .projects-container {
   position: relative;
-  top: 150px;
-  margin-left: 50px;
+  top: 70px;
+  left: 0;
   background-color: #a3a29f;
   min-height: auto;
 }
@@ -7656,12 +7656,13 @@ button.close {
 }
 
 body {
+  width: 100%;
   background-color: #faf3e9;
 }
 
 #main {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
-  min-height: 245vh;
+  min-height: auto;
   display: flex;
   width: 90%;
 }
@@ -7671,10 +7672,7 @@ body {
 }
 
 .about-me {
-  width: 20%;
-  position: relative;
-  left: 0px;
-  background: linear-gradient rgba(121, 77, 12, 0.2), rgba(84, 155, 90, 0.9);
+  width: 30%;
 }
 
 .projects-container p {
@@ -7707,17 +7705,6 @@ img {
   left: -9px;
 }
 
-.code-location,
-.linkedln {
-  display: flex;
-  gap: 20px;
-}
-
-.code-technologies {
-  display: flex;
-  gap: 15px;
-}
-
 .code-technologies p {
   border: 2px solid;
   height: 40px;
@@ -7744,5 +7731,12 @@ img {
 .Twitter {
   display: flex;
   gap: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  #main {
+    display: flex;
+    flex-direction: column;
+  }
 }
 /*# sourceMappingURL=desglobe.css.map */
